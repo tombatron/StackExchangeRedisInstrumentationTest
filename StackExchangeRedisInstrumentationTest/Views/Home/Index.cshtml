@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Microsoft.AspNetCore.Mvc.Controllers.ControllerActionDescriptor>
+
+@foreach (var actionDescriptor in Model)
+{
+    <a asp-controller="@actionDescriptor.ControllerName" asp-action="@actionDescriptor.ActionName">@actionDescriptor.ActionName</a>
+
+    <br />
+}
